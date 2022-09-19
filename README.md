@@ -128,5 +128,5 @@ Root Mean Square Error: https://en.wikipedia.org/wiki/Root-mean-square_deviation
 Minimize RMSE.
 Try to provide some interpretability.
 
-#Surprise Library:
+# Surprise Library:
 For surprise library documentation please refer to this :https://surprise.readthedocs.io/en/stable/
