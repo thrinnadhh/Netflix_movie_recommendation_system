@@ -127,5 +127,6 @@ Root Mean Square Error: https://en.wikipedia.org/wiki/Root-mean-square_deviation
 2.2.3 Machine Learning Objective and Constraints
 Minimize RMSE.
 Try to provide some interpretability.
+
 #Surprise Library:
 For surprise library documentation please refer to this :https://surprise.readthedocs.io/en/stable/
