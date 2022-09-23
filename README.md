@@ -1,16 +1,18 @@
 __NETFLIX MOVIE RECOMMENDATION SYSTEM__:
-1. Business Problem
-1.1 Problem Description
+
+
+Business Problem
+Problem Description
 Netflix is all about connecting people to the movies they love. To help customers find those movies, they developed world-class movie recommendation system: CinematchSM. Its job is to predict whether someone will enjoy a movie based on how much they liked or disliked other movies. Netflix use those predictions to make personal movie recommendations based on each customer’s unique tastes. And while Cinematch is doing pretty well, it can always be made better.
 
 Now there are a lot of interesting alternative approaches to how Cinematch works that netflix haven’t tried. Some are described in the literature, some aren’t. We’re curious whether any of these can beat Cinematch by making better predictions. Because, frankly, if there is a much better approach it could make a big difference to our customers and our business.
 
 Credits: https://www.netflixprize.com/rules.html
 
-1.2 Problem Statement
+Problem Statement
 Netflix provided a lot of anonymous rating data, and a prediction accuracy bar that is 10% better than what Cinematch can do on the same training data set. (Accuracy is a measurement of how closely predicted ratings of movies match subsequent actual ratings.)
 
-1.3 Sources
+Sources
 https://www.netflixprize.com/rules.html
 https://www.kaggle.com/netflix-inc/netflix-prize-data
 Netflix blog: https://medium.com/netflix-techblog/netflix-recommendations-beyond-the-5-stars-part-1-55838468f429 (very nice blog)
@@ -27,9 +29,9 @@ Minimize the difference between predicted and actual rating (RMSE and MAPE)
 Constraints:
 
 Some form of interpretability.
-2. Machine Learning Problem
-2.1 Data
-2.1.1 Data Overview
+Machine Learning Problem
+Data
+Data Overview
 Get the data from : https://www.kaggle.com/netflix-inc/netflix-prize-data/data
 
 Data files :
@@ -50,7 +52,7 @@ CustomerIDs range from 1 to 2649429, with gaps. There are 480189 users.
 Ratings are on a five star (integral) scale from 1 to 5.
 Dates have the format YYYY-MM-DD.
 
-2.1.2 Example Data point
+Example Data point
 1:
 1488844,3,2005-09-06
 822109,5,2005-05-13
@@ -115,15 +117,15 @@ Dates have the format YYYY-MM-DD.
 1927580,4,2004-11-08
 716874,5,2005-05-06
 4326,4,2005-10-29
-2.2 Mapping the real world problem to a Machine Learning Problem
-2.2.1 Type of Machine Learning Problem
+Mapping the real world problem to a Machine Learning Problem
+Type of Machine Learning Problem
 For a given movie and user we need to predict the rating would be given by him/her to the movie. 
 The given problem is a Recommendation problem 
 It can also seen as a Regression problem 
-2.2.2 Performance metric
+Performance metric
 Mean Absolute Percentage Error: https://en.wikipedia.org/wiki/Mean_absolute_percentage_error
 Root Mean Square Error: https://en.wikipedia.org/wiki/Root-mean-square_deviation
-2.2.3 Machine Learning Objective and Constraints
+Machine Learning Objective and Constraints
 Minimize RMSE.
 Try to provide some interpretability.
 
